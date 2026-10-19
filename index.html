@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roman IV Canlas | AI Engineering & Data Science Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-200 font-sans antialiased selection:bg-emerald-500/30 selection:text-emerald-300">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-mono font-bold text-lg text-white tracking-tight">
+        roman<span class="text-emerald-400">.dev</span>
+      </a>
+      <nav class="hidden sm:flex items-center gap-6 text-sm text-slate-400">
+        <a href="#projects" class="hover:text-white transition">Projects</a>
+        <a href="#skills" class="hover:text-white transition">Skills</a>
+        <a href="#education" class="hover:text-white transition">Education</a>
+        <a href="assets/Roman_Canlas_CV.pdf" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/20 font-medium transition">
+          Resume PDF
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-16 space-y-24">
+
+    <!-- Hero Section -->
+    <section class="space-y-6 pt-6">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono text-emerald-400">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Open for AI Engineering & Data Science Internships
+      </div>
+      <h1 class="text-4xl sm:text-6xl font-bold text-white tracking-tight">
+        Roman IV Canlas
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-400 max-w-3xl leading-relaxed">
+        Computer Science student specializing in <span class="text-slate-200 font-medium">AI Engineering and Data Science</span>. I build multi-step LLM agent workflows, real-time generative AI streaming backends, predictive spatial models, and normalized PostgreSQL applications.
+      </p>
+      <div class="flex flex-wrap items-center gap-4 pt-2 text-sm font-medium">
+        <a href="#projects" class="px-5 py-2.5 rounded-lg bg-emerald-500 text-slate-950 font-semibold hover:bg-emerald-400 transition">
+          View Case Studies
+        </a>
+        <a href="assets/Roman_Canlas_CV.pdf" target="_blank" class="px-5 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 transition">
+          Download CV
+        </a>
+        <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" class="px-4 py-2.5 rounded-lg text-slate-400 hover:text-white transition font-mono">
+          GitHub ↗
+        </a>
+        <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" class="px-4 py-2.5 rounded-lg text-slate-400 hover:text-white transition font-mono">
+          LinkedIn ↗
+        </a>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="space-y-10">
+      <div class="space-y-2">
+        <h2 class="text-2xl font-bold text-white tracking-tight">Featured Engineering & Data Case Studies</h2>
+        <p class="text-slate-400 text-sm">End-to-end implementations spanning generative AI backends, spatial statistics, and relational databases.</p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-8">
+
+        <!-- Project 1: SonataPy -->
+        <article class="rounded-2xl bg-slate-900/60 border border-slate-800 p-6 sm:p-8 space-y-6 hover:border-slate-700 transition">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <span class="text-xs font-mono uppercase tracking-wider text-emerald-400">Real-Time GenAI & Compiler Design</span>
+              <h3 class="text-xl font-bold text-white mt-1">SonataPy: Real-Time AI Music Generator & DSL Interpreter</h3>
+            </div>
+            <a href="https://github.com/YOUR_GITHUB_USERNAME/SonataPy" target="_blank" class="text-xs font-mono text-slate-400 hover:text-emerald-400 border border-slate-800 px-3 py-1.5 rounded-lg self-start">
+              View Repository ↗
+            </a>
+          </div>
+
+          <p class="text-slate-300 text-sm leading-relaxed">
+            A real-time AI audio streaming application powered by Google's Lyria model (<code class="text-emerald-300 font-mono">google-genai</code>) and Python FastAPI WebSockets. Features a custom-built Domain-Specific Language (DSL) compiler pipeline to parse weighted multi-instrument prompts and modulate BPM, musical scale, density, brightness, and chaos in real time.
+          </p>
+
+          <!-- Architecture Pipeline Box -->
+          <div class="bg-slate-950/90 border border-slate-800/80 rounded-xl p-4 space-y-2">
+            <div class="text-xs font-mono text-slate-400">System Execution Pipeline:</div>
+            <div class="flex flex-wrap items-center gap-2 text-xs font-mono text-emerald-300">
+              <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">Weighted Prompt UI</span>
+              <span class="text-slate-600">→</span>
+              <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">tokenizer.py</span>
+              <span class="text-slate-600">→</span>
+              <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">parser.py (AST)</span>
+              <span class="text-slate-600">→</span>
+              <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">interpreter.py</span>
+              <span class="text-slate-600">→</span>
+              <span class="px-2.5 py-1 rounded bg-emerald-950/60 border border-emerald-500/30">FastAPI WebSocket Stream (Lyria)</span>
+            </div>
+          </div>
+
+          <ul class="text-sm text-slate-400 space-y-1.5 list-disc list-inside">
+            <li>Implemented lexer, parser, Abstract Syntax Tree (<code class="font-mono text-slate-300">ast_nodes.py</code>), and interpreter modules from scratch.</li>
+            <li>Built continuous bidirectional audio streaming over <code class="font-mono text-slate-300">ws://</code> with an offline tone-synthesis fallback mode.</li>
+          </ul>
+
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-slate-300">Python</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-slate-300">FastAPI</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-slate-300">WebSockets</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-slate-300">Google Lyria API</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-slate-300">JavaScript (ES6)</span>
+          </div>
+        </article>
+
+        <!-- Project 2: Undergraduate Thesis -->
+        <article class="rounded-2xl bg-slate-900/60 border border-slate-800 p-6 sm:p-8 space-y-6 hover:border-slate-700 transition">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <span class="text-xs font-mono uppercase tracking-wider text-sky-400">Spatial Data Science & Predictive Modeling</span>
+              <h3 class="text-xl font-bold text-white mt-1">Mammalian Habitat Suitability & Connectivity Modeling in Luzon</h3>
+            </div>
+            <span class="text-xs font-mono text-slate-400 border border-slate-800 px-3 py-1.5 rounded-lg self-start">
+              Undergraduate CS Thesis • 2026
+            </span>
+          </div>
+
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Modeled species distribution and ecological connectivity corridors across Luzon, Philippines using Maximum Entropy (<code class="text-sky-300 font-mono">MaxEnt</code>) and Morphological Spatial Pattern Analysis (<code class="text-sky-300 font-mono">MSPA</code>) to identify critical conservation networks.
+          </p>
+
+          <div class="bg-slate-950/90 border border-slate-800/80 rounded-xl p-4 space-y-2">
+            <div class="text-xs font-mono text-slate-400">Modeling & Validation Workflow:</div>
+            <div class="flex flex-wrap items-center gap-2 text-xs font-mono text-sky-300">
+              <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">Bioclimatic & Env Rasters</span>
+              <span class="text-slate-600">→</span>
+              <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">Spatial Cross-Validation</span>
+              <span class="text-slate-600">→</span>
+              <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">MaxEnt Suitability Maps</span>
+              <span class="text-slate-600">→</span>
+              <span class="px-2.5 py-1 rounded bg-sky-950/60 border border-sky-500/30">MSPA Structural Corridors</span>
+            </div>
+          </div>
+
+          <ul class="text-sm text-slate-400 space-y-1.5 list-disc list-inside">
+            <li>Implemented spatial block cross-validation in Python to mitigate spatial autocorrelation and prevent optimistic bias.</li>
+            <li>Classified structural habitat patterns (cores, bridges, loops, and edges) via MSPA to map landscape-level ecological corridors.</li>
+          </ul>
+
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-slate-300">Python</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-slate-300">MaxEnt</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-slate-300">MSPA</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-slate-300">Spatial Cross-Validation</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-slate-300">Pandas / NumPy</span>
+          </div>
+        </article>
+
+        <!-- Project 3: StockPal -->
+        <article class="rounded-2xl bg-slate-900/60 border border-slate-800 p-6 sm:p-8 space-y-6 hover:border-slate-700 transition">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <span class="text-xs font-mono uppercase tracking-wider text-amber-400">Backend Engineering & Relational Databases</span>
+              <h3 class="text-xl font-bold text-white mt-1">StockPal: Smart Inventory Management System</h3>
+            </div>
+            <a href="https://github.com/YOUR_GITHUB_USERNAME/StockPal" target="_blank" class="text-xs font-mono text-slate-400 hover:text-amber-400 border border-slate-800 px-3 py-1.5 rounded-lg self-start">
+              View Repository ↗
+            </a>
+          </div>
+
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Full-stack inventory tracking and reporting platform co-developed across a structured 60-day Agile sprint. Designed around a normalized PostgreSQL schema and RESTful Flask APIs with automated data export pipelines for business analytics.
+          </p>
+
+          <ul class="text-sm text-slate-400 space-y-1.5 list-disc list-inside">
+            <li>Designed normalized relational schemas in PostgreSQL and authored SQL queries for stock movement auditing.</li>
+            <li>Built REST API endpoints in Flask and automated CSV generation pipelines for external spreadsheet reporting.</li>
+            <li>Coordinated development milestones across a 60-day timeline using a formal Work Breakdown Structure (WBS).</li>
+          </ul>
+
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-slate-300">Python</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-slate-300">Flask</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-slate-300">PostgreSQL</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-slate-300">SQL</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-slate-300">REST APIs</span>
+          </div>
+        </article>
+
+        <!-- Project 4: Agentic AI & ML Workflows -->
+        <article class="rounded-2xl bg-slate-900/60 border border-slate-800 p-6 sm:p-8 space-y-6 hover:border-slate-700 transition">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <span class="text-xs font-mono uppercase tracking-wider text-purple-400">Agentic AI, RAG & NLP</span>
+              <h3 class="text-xl font-bold text-white mt-1">Autonomous AI Agent Chains, FastMCP & ML Pipelines</h3>
+            </div>
+            <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" class="text-xs font-mono text-slate-400 hover:text-purple-400 border border-slate-800 px-3 py-1.5 rounded-lg self-start">
+              Colab Notebooks ↗
+            </a>
+          </div>
+
+          <p class="text-slate-300 text-sm leading-relaxed">
+            A collection of modular AI engineering and machine learning implementations exploring stateful agent routing, Model Context Protocol (MCP) tool servers, Retrieval-Augmented Generation, and classical NLP text classification.
+          </p>
+
+          <ul class="text-sm text-slate-400 space-y-1.5 list-disc list-inside">
+            <li>Engineered multi-step LLM workflows using LangChain Expression Language (LCEL), LangGraph state graphs, and the Google Gemini API.</li>
+            <li>Built custom FastMCP servers and vector store retrieval pipelines to ground model outputs in external context.</li>
+            <li>Developed data cleaning and text classification pipelines using Pandas, TF-IDF vectorization, and Scikit-learn classifiers.</li>
+          </ul>
+
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-slate-300">LangChain</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-slate-300">LangGraph</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-slate-300">FastMCP</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-slate-300">Gemini API</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-slate-300">Scikit-learn</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-slate-300">TF-IDF</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="space-y-6">
+      <h2 class="text-2xl font-bold text-white tracking-tight">Technical Stack & Workflow</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="p-5 rounded-xl bg-slate-900/50 border border-slate-800 space-y-2">
+          <h3 class="text-sm font-mono text-emerald-400">AI & Machine Learning</h3>
+          <p class="text-sm text-slate-300">Python, LangChain, LangGraph, FastMCP, Google Gemini & Lyria APIs, RAG & Vector Stores, Scikit-learn, TF-IDF, COCO-SSD, MaxEnt</p>
+        </div>
+        <div class="p-5 rounded-xl bg-slate-900/50 border border-slate-800 space-y-2">
+          <h3 class="text-sm font-mono text-sky-400">Data Science, Backend & DBs</h3>
+          <p class="text-sm text-slate-300">Pandas, NumPy, Spatial Cross-Validation, MSPA, FastAPI, WebSockets, Flask, REST APIs, PostgreSQL, MySQL, SQL</p>
+        </div>
+        <div class="p-5 rounded-xl bg-slate-900/50 border border-slate-800 space-y-2">
+          <h3 class="text-sm font-mono text-amber-400">Frontend, Mobile & Tools</h3>
+          <p class="text-sm text-slate-300">JavaScript (ES6), HTML/CSS, Flutter, Dart, Git, GitHub Actions, Google Colab, Linux, Figma</p>
+        </div>
+        <div class="p-5 rounded-xl bg-slate-900/50 border border-slate-800 space-y-2">
+          <h3 class="text-sm font-mono text-purple-400">Workflow & Collaboration</h3>
+          <p class="text-sm text-slate-300">Agile Sprints & WBS Planning, Technical Documentation, Pull Request Workflows, Data Storytelling & Research Defense</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Footer -->
+    <section id="education" class="border-t border-slate-800 pt-12 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+      <div class="space-y-1">
+        <h2 class="text-lg font-bold text-white">Bachelor of Science in Computer Science</h2>
+        <p class="text-sm text-slate-400">Mabalacat City, Pampanga, Philippines</p>
+      </div>
+      <div class="flex items-center gap-4 text-sm font-mono">
+        <a href="mailto:YOUR_EMAIL@example.com" class="text-emerald-400 hover:underline">YOUR_EMAIL@example.com</a>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
